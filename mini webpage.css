@@ -1,0 +1,264 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+
+}
+nav{
+	width:100% ;
+	height: 75px;
+	line-height: 75px;
+	padding: 0px 100px;
+	/*position: fixed;*/
+	background-image: linear-gradient(#033747,#012733);
+}
+nav .logo{
+	font-size: 30px;
+	font-weight: bolder;
+	float: left;
+	color: whitesmoke;
+	letter-spacing: 1.5px;
+	cursor:pointer;
+
+}
+nav ul{
+	float: right;
+}
+nav li{
+	display: inline;
+	list-style: none;
+}
+nav li a{
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 0px 30px;
+	color: whitesmoke;
+	text-decoration: none;
+}
+nav li a:hover{
+	color: #ff8c69;
+	transition: all 0.4s ease 0s;
+}
+#banner{
+	background: linear-gradient(rgba(0,0,0,0.5),#0096),url("D:/html/music/image1");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+    
+}
+.banner-text{
+	color: whitesmoke;
+	width: 100%;
+	line-height:auto;
+	/*top:100%;
+	transform: translateY(-50%);*/
+	text-align: center;
+	padding: 200px 0;
+}
+.banner-text h1{
+	font-size: 70px;
+	margin-top: 80px;
+
+}
+.banner-text p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+	font-size: 20px;
+}
+.
+footer{
+	width: 100%;
+/*background-color: #24262b;*/
+/*padding: 70px 0;*/
+}
+.container{
+	width: 100%;
+	/*max-width: 1170px;*/
+		background-image: linear-gradient(#033747,#012733);
+	/*margin: auto;*/
+/*	background: linear-gradient(rgba(74, 184, 212),#0096)*/
+}
+.row{
+	display: flex;
+    flex-wrap: wrap;
+}
+.col{
+width: 33%;
+padding: 0 90px;
+}
+
+  .col ul{
+
+list-style: none;
+margin-bottom: 40px;
+}
+ .col ul li{
+	margin-top: 10px;
+}
+  .col ul li a{
+	font-size: 16px;
+	/*text-decoration: capitalize;*/
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: 300;
+/*	color: #bbbbbb;*/
+	display: block;
+	transition: all 0.3s ease;
+}
+ .col ul li a:hover{
+	color: whitesmoke;
+	padding-left:10px ;
+}
+h2{
+	color: whitesmoke;
+}
+ .col ul h2{
+}
+font-size: 18px;
+color: whitesmoke;
+/*text-decoration: capitalize;*/
+margin-bottom: 35px;
+font-weight: 500;
+position: relative;
+
+}
+ .col h2::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	/*background-color: #e91e63;*/
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+
+}
+.declaration{
+	text-align: center;
+	color: whitesmoke;
+	background-image: linear-gradient(#033747,#012733);
+}
+
+
+/*.wrapper{
+	position: relative;
+	width: 400px;
+	height: 440px;
+	background: transparent;
+	border: 2px solid rgba(255, 255,255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*overflow: hidden;
+    transform:scale(1) ;
+}  
+.form-box login{
+	width: 100%;
+    padding: 40px;
+}
+.icon-close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+	background: #162938;
+	font-size: 2em;
+	color: #fff;
+	display: flex ;
+	justify-content: center;
+	align-items: center;
+	/*overflow: hidden;
+	border-bottom-left-radius: 20px;
+	cursor: pointer;
+	z-index: 1;
+}
+.form-box h2{
+	font-size: 2em;
+	color: #162938;
+	text-align: center;
+
+}
+.input-box{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	border-bottom: 2px solid #162938;
+	margin: 30px 0;
+}
+.input-box label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+}
+.input-box input{
+	width:100% ;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.input-box .icon{
+	position: absolute;
+	right:8px ;
+	font-size: 1.2em;
+	color: #162938;
+	line-height: 57px;
+}
+.remember-forgot{
+	font-size: .9em;
+	color: #162938;
+	font-weight: 500;
+	margin: -15px 0 15px;
+	display: flex;
+	justify-content: space-between;
+
+}
+.remember-forgot label input{
+	accent-color: #162938;
+	margin-right:3px ;
+}
+.remember-forgot a{
+	color: #162938;
+	text-decoration: none;
+}
+.remember-forgot a: hover{
+	text-decoration: underline;
+}
+.btn{
+	width: 100%;
+	height: 45px;
+	background:#162938 ;
+	border: none;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1em;
+	color: #fff;
+	font-weight: 500;
+
+}
+.login-register{
+	font-size: .9em;
+	color: #162938;
+	text-align: center;
+	font-weight: 500;
+	margin: 25px 0 10px;
+
+}
+.login-register p a:hover{
+	text-decoration: underline;
+}
+*/
